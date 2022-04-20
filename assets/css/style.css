@@ -107,7 +107,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #header .logo::before {
   content: ' ';
-  display: inline-block;
+  display: block;
   background: url("/assets/img/logo.png") no-repeat;
   background-size: 50px;
   width: 40px;
