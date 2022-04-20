@@ -337,9 +337,13 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height: 80vh;
-  background-image: url("../img/landmarkbogo.jpg");
-  background-size: 50% no-repeat; 
+  height: 100vh;
+  background: url("../img/landmarkbogo.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  
 }
 #hero .container {
   padding-top: 72px;
@@ -394,6 +398,9 @@ h1, h2, h3, h4, h5, h6 {
 #hero .animated {
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
+.img-fluid {
+  margin-left: 150px;
+}
 @media (max-width: 991px) {
   #hero {
     height: 100vh;
@@ -408,6 +415,9 @@ h1, h2, h3, h4, h5, h6 {
   }
   #hero .hero-img img {
     width: 50%;
+  }
+  .img-fluid {
+    margin-left: 0px;
   }
 }
 @media (max-width: 768px) {
@@ -424,7 +434,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 70%;
   }
   .gambar {
-    margin-left: 70px;
+    margin-left: 80px;
   }
 }
 @media (max-width: 575px) {
@@ -436,7 +446,12 @@ h1, h2, h3, h4, h5, h6 {
     padding: 10px 24px 11px 24px;
   }
   .gambar {
-    margin-left: 90px;
+    margin-left: 80px;
+  }
+}
+@media (max-width: 466px) {
+  .gambar {
+    margin-left: 30px;
   }
 }
 
